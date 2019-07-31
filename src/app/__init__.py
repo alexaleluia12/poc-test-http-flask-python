@@ -12,5 +12,9 @@ def handle_app_exception(error):
     response.status_code = error.status_code
     return response
 
+
 for route in routes:
-    blueprint.add_url_rule(route['path'], methods=route['methods'], view_func=route['handler'])
+    blueprint.add_url_rule(
+        route['path'],
+        methods=route['methods'],
+        view_func=route['handler'])

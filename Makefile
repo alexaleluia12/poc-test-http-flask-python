@@ -5,4 +5,6 @@ test:
 test-report:
 	coverage html
 lint:
-	pycodestyle --show-source src application.py
+	flake8 src
+lint-fix:
+	autopep8 --in-place --recursive --aggressive src/ application.py

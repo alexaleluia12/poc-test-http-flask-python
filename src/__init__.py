@@ -1,10 +1,6 @@
 from flask import Flask
-from dotenv import load_dotenv
 
 from . import app
-from .common import AppException
-
-load_dotenv()
 
 
 def create_app(config=None):
