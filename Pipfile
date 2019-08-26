@@ -16,6 +16,8 @@ requests = "*"
 redis = "*"
 boto3 = "*"
 python-dotenv = "*"
+gunicorn = "*"
+cacheout = "*"
 
 [requires]
 python_version = "3.7"

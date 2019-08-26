@@ -1,5 +1,7 @@
 run:
-	pipenv run python -u application.py
+	gunicorn -w 1 -b 0.0.0.0:5000 wsgi:instance_app
+dev-run:
+	python application.py
 test:
 	pytest --cov=src --cov-report=term-missing -s
 test-report:

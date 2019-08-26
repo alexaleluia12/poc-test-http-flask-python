@@ -6,7 +6,7 @@ RUN pip install pipenv
 
 COPY Pipfile .
 COPY Pipfile.lock .
-RUN pipenv install --system --skip-lock
+RUN pipenv install --dev --system --skip-lock
 COPY . .
 
 EXPOSE 5000
